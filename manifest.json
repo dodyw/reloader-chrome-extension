@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "URL Reloader",
+  "version": "1.0",
+  "description": "Reloads a specific URL every minute",
+  "permissions": [
+    "tabs",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
